@@ -1,3 +1,3 @@
 # Web-Programming
 
-Simple practice using knowledge of HTML, CSS, & Javascript.
+Simple practice using knowledge of HTML, CSS, & JavaScript.
