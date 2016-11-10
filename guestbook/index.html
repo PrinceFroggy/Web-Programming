@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>GUESTBOOK - int222_161a26</title>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sitecss.css" />
+		<link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/assignments/assignment-02/guest.css"  type="text/css" /> 
+		<script src="https://zenit.senecac.on.ca/~emile.ohan/int222/assignments/assignment-02/guest.js" type="text/javascript"></script> 
+	</head>
+	
+	<body>
+		
+		<nav>
+			<ul>
+				<li><a href="../">My Zenit Account</a></li>
+				<li><a class="current" href="../index.html">Home</a></li>
+				<li><a href="../gallery.html">Photo Gallery</a></li>
+				<li><a href="../video.html">Video</a></li>
+				<li><a href="../audio.html">Audio</a></li>
+				<li><a href="../html5.html">HTML5</a></li>
+				<li><a href="../tables.html">Tables with CSS</a></li>
+				<li><a href="../guestbook/index.html">Guest Book</a></li>
+				<li><a href="../css/sitecss.css">CSS Used</a></li>
+				<li><a href="../extra/index.html">Extra</a></li>
+			</ul>
+		</nav>
+		
+		<div class="content">
+				
+				<section>
+					
+					<h1>Guestbook</h1>
+						
+						<div class ="box">
+							<fieldset>
+								
+								<a href="javascript:unhide('on');">View Guest Book</a> / <a href="javascript:unhide('off');">Hide Guest Book</a>
+						
+							<form method='post' name='guests' id='guests' action='https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/guestbook.cgi'>
+								<p id = "p1">
+									<input type="submit"  class="button" value="SUBMIT" /> 
+								</p>
+								
+								<p id = "p1">
+									<input type="reset"  class="button" value="RESET" /> 
+								</p>
+							
+							
+								<p id = "p2">
+									Name
+									<br>
+									<input type="text" size="45" name="guest" id="guest" maxlength="40">
+								<br>
+									E-mail Address
+									<br>
+									<input type="text" size="60" name="email" id="email" maxlength="60">
+								<br>
+									City 
+									<br>
+									<input type="text" size="35" name="city" id="city" maxlength="35">
+								<br>
+									Web Page URL
+									<br>
+									<input type="text" size="60" name="web_url" id="web_url" maxlength="60">
+									
+								<br>
+									Web Page Title
+									<br>
+									<input type="text" size="25" name="web_title" id="web_title">
+								<br>
+									Provinces
+									<br>
+									<select id="province" name="province" size="15">
+										<option value="Select Province">Select Province</option>
+										<option value='Alberta'>Alberta</option>
+										<option value='British Columbia'>British Columbia</option>
+										<option value='Manitoba'>Manitoba</option>
+										<option value='New Brunswick'>New Brunswick</option>
+										<option value='Newfoundland'>Newfoundland</option>
+										<option value='Nova Scotia'>Nova Scotia</option>
+										<option value='Ontario' selected>Ontario</option>
+										<option value='Prince Edward Island'>Prince Edward Island</option>
+										<option value='Quebec'>Quebec</option>
+										<option value='Saskatchewan'>Saskatchewan</option>
+										<option value='Territory: Northwest Territories'>Territory: Northwest Territories</option>
+										<option value='Territory: Nunavut'>Territory: Nunavut</option>
+										<option value='Territory: Yukon'>Territory: Yukon</option>
+									</select>
+								<br>
+									Comments
+									<br>
+										<textarea name="comments" id="comment" maxlength="150"></textarea>
+								</p>
+							</fieldset>
+						</div>
+				</section>
+				
+				<aside class="guest">
+					<h2>Social Media Links</h2>
+						<div style="position: relative; background: url('../images/social-media.png') no-repeat; width: 250px; height: 140px; display: block; margin: 0 auto;">
+							<a href="http://facebook.com" title="Face Book"  style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a> 
+							<a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a> 
+							<a href="http://pintrest.com" title="Pintrest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a> 
+							<a href="https://plus.google.com/" title="Google Plus"  style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a> 
+						</div>
+				</aside>
+		</div>
+		
+		<div id="viewguests">
+			<iframe src="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/viewguestbook.cgi"></iframe>
+		</div>
+		
+		<footer>
+			<section>
+				<script type="text/javascript">
+					var dt=new Date(document.lastModified);
+					document.write('<p>This page was last updated on '+dt.toLocaleString()) + '</p>';
+				</script>
+			</section>
+		</footer>
+	</body>
+
+</html>
